@@ -1,4 +1,5 @@
 
+import Api from "./Api";
 import "./App.css";
 import Doubts from "./Doubts";
 import Header from "./Header";
@@ -29,8 +30,9 @@ function App() {
       {/* <header > */}
       <h1> Hello , I am Richa {data}</h1>
        {data1 ? <p>"yes"</p> : <p>no</p>}
+       <h1> Api calling</h1>
+       <Api/>
       {arr1.map((item , index) => {
-        debugger
         {/* return console.log(item , "hghfhgf" , index); */}
         return <Doubts item={item} setSecData={setSecData}/>
       })}
