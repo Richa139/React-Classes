@@ -3,6 +3,7 @@ import Api from "./Api";
 import "./App.css";
 import Doubts from "./Doubts";
 import Header from "./Header";
+import PostApi from "./PostApi";
 import States from "./States";
 import React, { useState } from "react";
 function App() {
@@ -31,7 +32,8 @@ function App() {
       <h1> Hello , I am Richa {data}</h1>
        {data1 ? <p>"yes"</p> : <p>no</p>}
        <h1> Api calling</h1>
-       <Api/>
+       {/* <Api/> */}
+       <PostApi/>
       {arr1.map((item , index) => {
         {/* return console.log(item , "hghfhgf" , index); */}
         return <Doubts item={item} setSecData={setSecData}/>
